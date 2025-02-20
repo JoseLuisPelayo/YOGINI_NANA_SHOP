@@ -2,7 +2,8 @@
 Una tienda online desarrollada enteramente en **PHP**, **HTML**, **CSS** y **JavaScript vanilla**, con una base de datos en **MySQL**. La aplicación incluye autenticación basada en **JWT**, middlewares para controlar usuarios y roles, y un **gestor de rutas avanzado** que no solo carga dinámicamente los archivos CSS y JS, sino que también permite nombrar las rutas de manera desacoplada del código HTML, facilitando su modificación sin tocar directamente el HTML.
 
 ## Características Principales
-
+ - **buenas prácticas** con una arquitectura MVC.
+    - Siguiendo el patrón Repository-Service-Controller.
 - **Autenticación JWT**: Seguridad robusta mediante JSON Web Tokens para gestionar sesiones de usuarios.
 - **Middlewares**: Control de acceso basado en roles (admin, usuario, invitado).
 - **Gestor de Rutas Avanzado**:
