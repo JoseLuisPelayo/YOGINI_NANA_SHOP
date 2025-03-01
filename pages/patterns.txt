@@ -1,0 +1,4 @@
+nombre  pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ ]{3,20}
+apellido  pattern="[a-zA-ZáéíóúÁÉÍÓÚñÑ]{4,30}
+
+password ^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{6,16}$

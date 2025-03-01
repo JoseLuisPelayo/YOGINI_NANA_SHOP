@@ -1,0 +1,140 @@
+#my-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 87svh;
+    background-image: url(../../assets/img/como_hacer_meditacion_zen_45688_orig.jpg);
+    object-fit: cover;
+    object-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #ECDFD766;
+    backdrop-filter: blur(30px);
+    box-shadow: 2px 2px 20px #0004;
+    border-radius: 7px;
+    text-align: center;
+    padding: 30px 35px 0 35px;
+}
+
+#my-account-form {
+    display: grid;
+    grid-template-columns: 100svw;
+    place-content: center;
+}
+
+
+.data-l-cont {
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.data-l-cont label {
+    width: 100%;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.data-l-cont input {
+    height: 30px;
+    font-size: 1rem;
+    border: 1px solid var(--secondary);
+    border-radius: 5px;
+    padding: .2rem 1rem .1rem 1rem;
+}
+
+.data-v-cont .data-l-cont {
+    flex-direction: column;
+    min-width: 30%;
+    align-items: center;
+}
+
+.data-v-cont .data-l-cont input {
+    width: 70px;
+}
+
+.data-v-cont .data-l-cont label {
+    text-align: center;
+}
+
+#user-photo {
+    width: 95%;
+    font-size: .7rem;
+}
+
+.data-l-cont button {
+    background-color: var(--primary);
+    color: var(--black);
+    border-radius: 7px;
+    font-size: 1.2rem; 
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: 1px solid var(--third);
+    height: 35px;
+    padding: .4rem 1rem .4rem 1rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.photo-container {
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 0 0;
+    margin-top: .6rem;
+}
+
+.my-account-img {
+    width: 200px;
+}
+
+@media (min-width: 992px) {
+    .form-container {
+        min-width: 800px;
+        max-width: 1000px;
+    }
+
+    .s-1 {
+        grid-area: s1;
+    }
+    
+    .s-2 {
+        grid-area: s2;
+    }
+    
+    .s-3 {
+        grid-area: s3;
+        padding-top: 46px;
+    }
+    
+    .s-4 {
+        grid-area: s4;
+    }
+
+    .s-5 {
+        grid-area: s5;
+    }
+
+    #my-account-form {
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        grid-template-areas: 
+        's2 s1'
+        's2 s1'
+        's2 s1'
+        's2 s4'
+        's3 s4'
+        's5 s5'
+        ;
+        place-content: center;
+    }
+}
