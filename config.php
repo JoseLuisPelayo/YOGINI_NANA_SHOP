@@ -3,7 +3,7 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASS', '');
-define('DB', 'yogini_nana');
+define('DB', 'tienda');
 
 define('CATEGORIES', [
     'moda' => '1',
@@ -52,7 +52,7 @@ define('ROUTES', [
     ],
     'cart' => [
         'route' => 'cart',
-        'css' => [],
+        'css' => ['cart.css'],
         'js' => []
     ]
 ]);

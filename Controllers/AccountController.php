@@ -27,7 +27,6 @@ class AccountController
 
     public function load()
     {
-
         $user = $this->userService->findUserByEmail($_SESSION['email']);
         $direction = $this->addressService->getMainAddressByUserId($user->getId());
         $this->pages->render('myAccount', ['user' => $user, 'direction' => $direction]);

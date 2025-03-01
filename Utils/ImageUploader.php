@@ -11,7 +11,7 @@ class ImageUploader
         }
 
         // Verificar formato de la imagen
-        $allowedMimeTypes = ["image/jpeg", "image/png"];
+        $allowedMimeTypes = ["image/jpeg", "image/png", "image/webp"];
         $mimeType = mime_content_type($file['tmp_name']);
         if (!in_array($mimeType, $allowedMimeTypes)) {
             throw new Exception("La imagen tiene un formato erróneo.");

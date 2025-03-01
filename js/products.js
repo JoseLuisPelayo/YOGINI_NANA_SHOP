@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             let productId = button.getAttribute('product_id');
 
             let request = new XMLHttpRequest();
-            request.open('POST', '/proyecto/products/:id', true);
+            request.open('POST', 'Yoguini_Nana_Shop/products/:id', true);
             request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             request.send('product_id=' + encodeURIComponent(productId));
 
@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         })
     });
-
 
     handleResize();
 

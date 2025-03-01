@@ -1,5 +1,4 @@
 
-
 .home-container {
     padding: .5rem;
     position: relative;
@@ -55,6 +54,8 @@
 
 .slider {
     margin: .5rem auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .star {
@@ -122,9 +123,11 @@
     margin-top: 2.5rem;
     position: relative;
     max-width: 500px;
+    min-width: 250px;
     align-items: center;
     padding-bottom: 1rem;
 }
+
 .swiper-button-next {
     padding-top: 1px;
 }
@@ -144,12 +147,9 @@
 .swiper-pagination-bullet {
     background-color: var(--secondary);
     opacity: 1;
-
 }
 
-@media (min-width: 576px) {
 
-}
 
 @media (min-width: 768px) {
     .home-container {
@@ -170,9 +170,7 @@
     }
 }
 
-@media (min-width: 992px) {
 
-}
 
 @media (min-width: 1200px) {
     .home-container {

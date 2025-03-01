@@ -1,6 +1,6 @@
 main {
     position: relative;
-    min-height: 86svh;
+    flex-grow: 1;
 }
 
 .tittle-p-l {
@@ -48,7 +48,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 5rem;
     max-width: 100svw;
     padding: 2rem;
 }
@@ -107,6 +107,8 @@ main {
     padding: .5rem 1rem .5rem 1rem;
     font-size: 1.2rem;
     border-radius: 1rem;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
 .card {
@@ -120,9 +122,13 @@ main {
         'btn btn btn'
     ;
     max-width: 350px;
+    padding: 20px 10px;
     gap: 10px;
-    margin: auto;
     margin-bottom: 1rem;
+    -webkit-box-shadow: 7px 4px 32px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 7px 4px 32px 0px rgba(0,0,0,0.33);
+    box-shadow: 7px 4px 32px 0px rgba(0,0,0,0.33);
+    border-radius: 10px;
 }
 
 @media (min-width: 800px) {

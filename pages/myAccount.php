@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/user/myaccount.css">
 </head>
 
-<body>
+<body> -->
     <main id="my-account">
         <div class="form-container">
             <h2 class="title-page">MI CUENTA</h2>
@@ -127,6 +127,6 @@
 
     </main>
 
-</body>
+<!-- </body>
 
-</html>
+</html> -->

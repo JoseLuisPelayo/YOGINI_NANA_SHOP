@@ -8,6 +8,7 @@ use Controllers\HomeController;
 use Controllers\LoginController;
 use Controllers\RegisterController;
 use Controllers\AccountController;
+use Controllers\CartController;
 use Lib\Middleware;
 use Lib\AuthRolMiddleware;
 use Lib\Router;
@@ -46,6 +47,15 @@ Router::add('GET', '/products', function() {
     return (new ProductsContoller())->load();
 });
 
+Router::add('POST', '/products/:id', function($id) {
+    return (new ProductsContoller())->addProductToCart($id);
+});
+
+Router::add('GET', '/cart', function () {
+    return (new CartController())->load();
+});
+
+
 Router::add('GET', '/products/:category', function($category) {
     return (new ProductsContoller())->listCategory($category);
 });
@@ -64,7 +74,6 @@ Router::add('POST', '/user/myaccount', function () {
 }, [$userMiddleware]);
 
 //Rutas protegidas por rol
-
 Router::add('GET', '/admin', function () {
     echo 'El enrutador funciona';
 },[$authRolMiddleware]);
@@ -73,14 +82,11 @@ Router::add('GET', '/admin', function () {
 try {
 Router::dispatch();
 } catch (Exception $e) {
-    // Manejar la excepción y mostrar un mensaje de error amigable
+    // Manejar la excepción y mostrar un mensaje de error
     echo "Se ha producido un error: " . $e->getMessage();
-    // Opcionalmente, puedes registrar el error en un archivo de registro
 }
 
 
-
-// Router::dispatch();
 
 
 
